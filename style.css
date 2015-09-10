@@ -1,0 +1,257 @@
+* {
+  margin:0;
+  padding:0;
+}
+body{
+  width:1100px;
+  margin:auto;
+  font-family:Arial, helvetica, Verdana, Sans-Serif;
+  font-size:20px;
+  background:bisque;
+}
+html, body {
+  height:100%;
+}
+h1 {
+  height:43px;
+  font-size:2em;
+  font-style:italic;
+  color:pink;
+  text-shadow: 0.1em 0.1em midnightblue
+}
+
+p {
+  text-indent:2.5em;
+  font-size:0.775em;
+  text-align:justify;
+}
+
+.space { 
+  line-height: 0.3 em; 
+}
+
+.left {
+  float: left; /*left in text*/
+  margin: 4px; /*space around the image*/
+}
+
+.right{
+  float: right; /*right in text*/
+  margin: 3px; /*space around the image*/
+}
+
+.noindent {
+	text-indent:0em;
+}
+
+.subtitle {
+	color:mistyrose;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	font-size:1em;
+	font-style:italic;
+}
+
+.accordion1 h3{
+	background:springgreen;
+	color: crimson;
+	font-style:italic;
+}
+
+
+ul.accordion li.bleft{
+    border-left:2px solid #fff;
+}
+ul.accordion{
+    list-style:none;
+    position:absolute;
+    font-family: Cambria, serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.5em;
+}
+ul.accordion li{
+    float:right;
+    width:115px;
+    height:330px;
+    display:block;
+    border-right:2px solid #fff;
+    border-bottom:2px solid #fff;
+    background-color:#fff;
+    background-repeat:no-repeat;
+    background-position:center center;
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+    -moz-box-shadow:1px 3px 15px #555;
+    -webkit-box-shadow:1px 3px 15px #555;
+    box-shadow:1px 3px 15px #555;
+}
+ul.accordion li.bg1{
+    background-image:url(http://photos.demandstudios.com/getty/article/103/75/513907457_XS.jpg);
+}
+ul.accordion li.bg2{
+    background-image:url(http://rosenotes.typepad.com/.a/6a010535bf3807970c017d3d6c3266970c-500wi);
+}
+ul.accordion li.bg3{
+    background-image:url(http://images.fanpop.com/images/image_uploads/Portland-Rose-Garden-portland-692412_1920_1440.jpg);
+}
+
+ul.accordion li .heading{
+    background-color:#fff;
+    padding:10px;
+    margin-top:60px;
+    opacity:0.9;
+    text-transform:uppercase;
+    font-style:normal;
+    font-weight:bold;
+    letter-spacing:1px;
+    font-size:14px;
+    color:#444;
+    text-align:center;
+    text-shadow:-1px -1px 1px #ccc;
+}
+ul.accordion li .description{
+    position:absolute;
+    width:480px;
+    height:175px;
+    bottom:0px;
+    left:0px;
+    display:none;
+}
+ul.accordion li .description h2{
+    text-transform:uppercase;
+    font-style:normal;
+    font-weight:bold;
+    letter-spacing:1px;
+    font-size:45px;
+    color:#444;
+    text-align:left;
+    margin:0px 0px 15px 20px;
+    text-shadow:-1px -1px 1px #ccc;
+}
+ul.accordion li .description p{
+    line-height:14px;
+    margin:10px 22px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 1.6em;
+}
+ul.accordion li .description a{
+    position:absolute;
+    bottom:5px;
+    left:20px;
+    text-transform:uppercase;
+    font-style:normal;
+    font-size:11px;
+    text-decoration:none;
+    color:#888;
+}
+ul.accordion li .description a:hover{
+    color:#333;
+    text-decoration:underline;
+}
+ul.accordion li .bgDescription{
+    background:transparent url(http://www.artedigitalia.es/images/bgDescription.png) repeat-x top left;
+    height:340px;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    display:none;
+}
+
+
+.gallery {
+	margin: 0 0 25px;
+	text-align: center;
+}
+.gallery li {
+	display: inline-block;
+	margin: 5px;
+	list-style: none;
+}
+.gallery a {
+	position: relative;
+	display: inline-block;
+}
+
+#container {
+  min-height:100%;
+  margin-bottom:-30px;
+}
+#header {
+  background-color:rosybrown;
+  text-align:center;  
+  position: relative
+}
+#header h1 span {   
+  background: url(pattern.jpg) repeat-x;
+  display: block;
+  width: 100%;
+  height: 47px;
+  position: absolute;  
+}
+
+#pagetitle {
+	/*color:#82D682;*/
+	color:lightcoral;
+	text-shadow: black 0.1em 0.1em;
+	font-size:1.3em;
+}
+
+#navigationh {
+  background-color:lightpink;
+}
+#navigationh ul {
+  text-align:center;
+}
+#navigationh li {
+  display:inline;
+  padding-left:1.7em;
+}
+#navigationh li:hover {
+  background:url(rose_icon1.png) no-repeat left;
+}
+
+#navigationv {
+  float:left;
+  background-color:palegreen;
+  width:190px;
+}
+#navigationv li {
+  list-style-type:none;
+}
+#navigationv li:hover{
+	background:url(rose_icon.png) no-repeat right;
+}
+
+#content {
+  margin-left:195px;
+}
+
+#flowerimage{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#pushdown {
+  clear:both;
+  height:30px;
+}
+#footer {
+  background-color:pink;
+  text-align:center;
+  height:30px;
+}
+
+img.rose_type_img {
+	width: 8em;
+	height: 7em;
+}
+
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>The World of Roses</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="keywords"  content="roses, about, information" />
+    <meta name="description" content="Description of a website about roses" />
+	    <link rel="stylesheet" type="text/css" href="style.css"/>
+		    <link rel="stylesheet" type="text/css"
+	href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/themes/base/jquery-ui.css"/>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>    
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>  
+	<script type="text/javascript">
+	$(function() {
+	    $('#accordion > li').hover(
+	        function () {
+	            var $this = $(this);
+	            $this.stop().animate({'width':'480px'},500);
+	            $('.heading',$this).stop(true,true).fadeOut();
+	            $('.bgDescription',$this).stop(true,true).slideDown(500);
+	            $('.description',$this).stop(true,true).fadeIn();
+	        },
+	        function () {
+	            var $this = $(this);
+	            $this.stop().animate({'width':'115px'},1000);
+	            $('.heading',$this).stop(true,true).fadeIn();
+	            $('.description',$this).stop(true,true).fadeOut(500);
+	            $('.bgDescription',$this).stop(true,true).slideUp(700);
+	        }
+	    );
+	});
+	
+	!function(d,s,id){
+		var js,fjs=d.getElementsByTagName(s)[0];
+		if(!d.getElementById(id)){js=d.createElement(s);
+			js.id=id;js.src="https://platform.twitter.com/widgets.js";
+			fjs.parentNode.insertBefore(js,fjs);
+			}
+		}
+		(document,"script","twitter-wjs");
+		
+		!function(d,s,id){
+			var js,fjs=d.getElementsByTagName(s)[0];
+			if(!d.getElementById(id)){js=d.createElement(s);
+				js.id=id;
+				js.src="//platform.twitter.com/widgets.js";
+				fjs.parentNode.insertBefore(js,fjs);
+				}
+			}
+			(document,"script","twitter-wjs");
+	</script>
+
+  </head>
+  <body>
+    <div id="container">
+    <div id="header">
+	  <h1><span></span></h1>
+ 	  <h1>The World of Roses</h1>
+    </div>
+
+	  <div id="navigationh">
+	    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History of Roses</a></li>
+		<li><a href="rosecare.html">Rose Care</a></li>
+        <li><a href="gallery.html">Image Gallery</a></li>	
+	    </ul>
+    </div>	
+
+
+	  <div id="navigationv">
+	    <ul>
+        <li><a href="hybridtea.html">Hybrid Tea Roses</a></li>
+        <li><a href="floribunda.html">Floribunda Roses</a></li>
+        <li><a href="shrub.html">Shrub Roses</a></li>
+        <li><a href="heirloom.html">Heirloom Roses</a></li>
+        <li><a href="landscape.html">Landscape Roses</a></li>
+        <li><a href="miniature.html">Miniature Roses</a></li>
+        <li><a href="groundcover.html">Groundcover Roses</a></li>
+        <li><a href="climbing.html">Climbing Roses</a></li>	
+	    </ul>
+    </div>
+
+
+    <div id="content"> 	
+      <h2 id="pagetitle">About this site</h2>
+
+		<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+		<a href="https://twitter.com/111iamtest" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @111iamtest</a>
+
+	    <br><br><p class="space">
+      This website is created for those who love roses and anything related to them. Here you can learn about the history of roses, about the different types of roses, or you can simply enjoy the image gallery. This website is in its early stage of development, and it will improve and provide you with more information overtime. 
+	    </p>
+	
+		<br><ul class="accordion" id="accordion">
+		    <li class="bg1">
+		        <div class="heading">Roses for Health</div>
+		        <div class="bgDescription"></div>
+		        <div class="description">
+		            <h2>Roses for Health</h2>
+		            <p>There is more to roses than just a traditional Valentine’s Day bouquet. These lovely flowers also possess true healing properties.</p>
+		            <a href="roses_health.html">more ?</a>
+		        </div>
+		    </li>
+		    <li class="bg2">
+		        <div class="heading">Arranging Roses</div>
+		        <div class="bgDescription"></div>
+		        <div class="description">
+		            <h2>Arranging Roses</h2>
+		            <p>One of the joys of rose gardening is cutting blooms to bring indoors. Many rose gardeners, in fact, grow roses just so they can cut them.</p>
+		            <a href="arranging_roses.html">more ?</a>
+		        </div>
+		    </li>
+		    <li class="bg3">
+		        <div class="heading">Planning Rose Gardens</div>
+		        <div class="bgDescription"></div>
+		        <div class="description">
+		            <h2>Planting Rose Gardens</h2>
+		            <p>How you plan your garden depends on your creative process. The great thing about garden design is that there is not wrong way to do it. Whatever best works for you and pleases you is the right way.</p>
+		            <a href="rosegardens.html">more ?</a>
+		        </div>
+		    </li>
+		</ul>
+	
+    </div>  
+
+    <div id="pushdown"></div>
+    </div>
+    <div id="footer">
+	    <a href="#">About</a> - <a href="#">Contact Us</a> - <a href="#">Terms of Use</a>
+	  </div>	
+  </body>
+</html>
